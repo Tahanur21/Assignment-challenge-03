@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker Zone Website</title>
+    <title>House Rent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- DaisyUi link and script -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,29 +21,91 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        // 'bike-primary': '#E76F51',
-                        // 'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+                        'fixed-color': 'rgba(171, 239, 95, 1)',
+                        'fixed-light-color': 'rgba(171, 239, 95, 0.5)',
                     }
                 }
             }
         }
     </script>
+    <!-- Icons link -->
+    <script src="https://kit.fontawesome.com/15f1567210.js" crossorigin="anonymous"></script>
     <style>
-        .poppins-thin {
-            font-family: "Poppins", sans-serif;
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
         }
     </style>
+    <!-- icons for use -->
+    <!-- <i class="fa-solid fa-circle-arrow-right text-2xl -rotate-45"></i> -->
 </head>
 
-<body>
-    <header>
-        
+<body class="font-manrope">
+    <!-- Header section -->
+    <header class="max-w-screen-lg mx-auto">
+        <!-- links -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start lg:flex-row lg:w-auto w-full justify-around flex-row-reverse">
+                <div class="dropdown lg:hidden block bg-white border border-gray rounded-full p-2 mr-3">
+                    <div tabindex="0" role="button" class="lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-50 p-2 shadow">
+                        <li><a class="text-[#494949]">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="text-xl font-bold w-[150px] mr-8"><i
+                        class="fa-solid fa-circle-arrow-right text-2xl -rotate-45 text-fixed-color"></i> HouseSell</a>
+            </div>
+            <div class="navbar-center hidden lg:flex mr-8">
+                <ul class="menu menu-horizontal px-1 text-[#737373] font-bold">
+                    <li><a class="text-[#494949]">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end space-x-5 ml-10 hidden lg:block">
+                <a href="#"><i
+                        class="fa-solid fa-magnifying-glass text-[#737373] bg-white border border-gray rounded-full p-2"></i></a>
+                <a href="#"><i
+                        class="fa-solid fa-cart-shopping text-[#737373] bg-white border border-gray rounded-full p-2"></i></a>
+                <a class="btn bg-fixed-color text-lg text-black font-bold rounded-3xl">Book Consult<i
+                        class="fa-solid fa-circle-arrow-right text-2xl -rotate-45"></i></a>
+            </div>
+        </div>
+        <!-- banner -->
+        <nav class="text-center items-center space-y-8 my-12 p-8">
+            <!-- image banner -->
+            <div>
+                <img class="mx-auto" src="images/banner.png" alt="">
+            </div>
+            <!-- banner content -->
+            <div class="space-y-8">
+                <h1 class="lg:text-5xl text-4xl font-extrabold text-[#212121]">A barn house of this design has a <br> striking appearance</h1>
+                <p class="text-xs text-[#494949] font-bold">The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, <br> sleek metal accents, and large windows that flood the space with natural light.</p>
+                <a href=""
+                    class="btn bg-fixed-light-color text-lg text-black font-medium border-fixed-color rounded-3xl lg:px-10 px-28">View
+                    Details <i
+                    class="fa-solid fa-circle-arrow-right text-2xl -rotate-45 text-fixed-color"></i></a>
+            </div>
+        </nav>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
